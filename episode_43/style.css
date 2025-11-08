@@ -1,1 +1,16 @@
 /* CSS for Episode 43 */
+.progress-container {
+      width: 100%;
+      background-color: #f3f3f3;
+  }
+  .progress-bar {
+      width: 1%;
+      height: 5px;
+      background: linear-gradient( 145deg,#4CAF50, yellow, red, #4CAF50, yellow, red, #4CAF50, yellow, red, #4CAF50, yellow, red, #4CAF50, yellow, red);
+      background-size: 300% 300%;
+      animation: progress 2s ease-in-out forwards;
+  }
+  @keyframes progress {
+      from { width: 1%; }
+      to { width: 100%; }
+  }
